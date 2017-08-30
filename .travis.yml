@@ -39,7 +39,7 @@ jobs:
       provider: releases
       api_key:
         secure: BREUYDkQHQQ4ejkln8DeqijhLG24eqU+ASJoFDW13Vxh4BjecxEv/ULYlSf2aMWQSlvEIb+ASW63lShzvSdQOT/ZVF2v6lCuxOODaHDGuK2AMvmnqZJOdkLoou0Ep3p/VpIOnx+vxkzP4WcuOTL0/grncRYAk0zeMQm5KQ5apmvOAXfyeHPcDBhrjHy37a5g2D6DWvet5UeEKbGQQ2LwDApXqQlLhDpHCgnMhBqIXWkaKE+13geEIkaogMRfgI+7VU1pXNvCO5mmi7vH6n7Vw7n8J0+H4MWSYE2P5RrNweYprWbXDgGVKUUa+g9pAfyK/rjYD8UZxlJXkvHVrEcFa8yU7B/djmsYwCSPdaKfUYvDOscARNqOtibfNF8ZFbU/3HB5g5y5mvK3vuvtEFfCfWx+a0RVL858Rhw+x+OY2sYh2Rq9QcVGUSmX+FzDU5cOcaAjxcffeOrocXiE7Hf79PkIPScehDGnYDzA6vedjh2k9dAtE+S+ueS1d6ISc7gCQS1LhuPXo4+IyJQh4uHMnrFYLKvXreEIFvu3X39WldFRvsPmz3IfxaytqV/amnlTzOg5DQFvhcYzE0ffOmyDDvvi82LzF/9W6AVBEE2KJ2kq0JI5R9VfZ2FBrP1orob4IMN2D9vHebFibrhDW5IUzRV17GY0f+2SF1HzF2Oc/Wg=
-      file: shopgate-opencart-module.zip
+      file: shopgate-opencart-module.ocmod.zip
       skip_cleanup: true
       on:
         tags: true
