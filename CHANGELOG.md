@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-## 2.9.35
+## 2.9.35 - 2017-08-30
 ### Changed
 - migrated Shopgate integration for OpenCart to GitHub
 - updated Shopgate Cart Integration SDK to 2.9.68
