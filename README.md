@@ -22,9 +22,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 ## About Shopgate
 
-Shopgate is the leading mobile commerce platform.
-
-Shopgate offers everything online retailers need to be successful in mobile. Our leading software-as-a-service (SaaS) enables online stores to easily create, maintain and optimize native apps and mobile websites for the iPhone, iPad, Android smartphones and tablets.
+Shopgate is the leading mobile commerce platform. Online retailers use our software-as-a-service (SaaS) to provide their mobile customers with successful native shopping apps. Developers can enhance the Shopgate Cloud platform by building extensions that customize the user experience and add new functionality to our powerful ecommerce solutions.
 
 ## License
 
