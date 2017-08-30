@@ -23,7 +23,7 @@
  * Shopgate Configuration
  */
 
-define("SHOPGATE_PLUGIN_VERSION", "2.9.34");
+define("SHOPGATE_PLUGIN_VERSION", "2.9.35");
 
 class ShopgateConfigOpencart extends ShopgateConfig
 {
