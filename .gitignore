@@ -1,0 +1,7 @@
+/.buildpath
+/.project
+/.settings
+/.idea
+/.php-cs.cache
+/src/shopgate/vendor
+/release/package

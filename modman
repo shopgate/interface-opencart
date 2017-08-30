@@ -1,0 +1,32 @@
+admin/controller/module/shopgate.php 						admin/controller/module/shopgate.php
+admin/controller/payment/shopgatepay.php 					admin/controller/payment/shopgatepay.php
+admin/language/de_DE/module/shopgate.php 					admin/language/de_DE/module/shopgate.php
+admin/language/de_DE/payment/shopgatepay.php 				admin/language/de_DE/payment/shopgatepay.php 
+admin/language/english/module/shopgate.php 					admin/language/english/module/shopgate.php
+admin/language/english/payment/shopgatepay.php 				admin/language/english/payment/shopgatepay.php
+admin/language/polish/module/shopgate.php 					admin/language/polish/module/shopgate.php
+admin/language/polish/payment/shopgatepay.php 				admin/language/polish/payment/shopgatepay.php
+admin/view/image/module/shopgate.png 						admin/view/image/module/shopgate.png
+admin/view/template/module/shopgate.tpl 					admin/view/template/module/shopgate.tpl
+admin/view/template/module/shopgate_old.tpl					admin/view/template/module/shopgate_old.tpl
+catalog/controller/module/shopgate.php 						catalog/controller/module/shopgate.php
+catalog/language/de_DE/module/shopgate.php 					catalog/language/de_DE/module/shopgate.php
+catalog/language/english/module/shopgate.php 				catalog/language/english/module/shopgate.php
+catalog/language/polish/module/shopgate.php 				catalog/language/polish/module/shopgate.php
+catalog/view/theme/default/template/module/shopgate.tpl 	catalog/view/theme/default/template/module/shopgate.tpl
+catalog/view/theme/template/module/shopgate.tpl 			catalog/view/theme/template/module/shopgate.tpl
+shopgate 													shopgate
+
+#For version 2.8.0 & below
+#admin/controller/feed/shopgate.php 						admin/controller/feed/shopgate.php
+#admin/controller/payment/shopgatepay.php 					admin/controller/payment/shopgatepay.php
+#admin/controller/shipping/shopgateshipping.php				admin/controller/shipping/shopgateshipping.php
+#admin/language/english/feed/shopgate.php 					admin/language/english/feed/shopgate.php
+#admin/language/english/payment/shopgatepay.php 			admin/language/english/payment/shopgatepay.php
+#admin/language/english/shipping/shopgateshipping.php 		admin/language/english/shipping/shopgateshipping.php
+#admin/view/image/payment/shopgate.png						admin/view/image/payment/shopgate.png
+#admin/view/template/feed/shopgate.tpl						admin/view/template/feed/shopgate.tpl
+#admin/view/template/payment/shopgatepay.tpl				admin/view/template/payment/shopgatepay.tpl
+#admin/view/template/shipping/shopgateshipping.tpl			admin/view/template/shipping/shopgateshipping.tpl
+#catalog/model/payment/shopgatepay.php						catalog/model/payment/shopgatepay.php
+#catalog/model/shipping/shopgateshipping.php				catalog/model/shipping/shopgateshipping.php

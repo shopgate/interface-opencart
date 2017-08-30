@@ -1,0 +1,52 @@
+dist: precise
+sudo: false
+language: php
+
+before_script:
+- phpenv config-rm xdebug.ini || return 0
+- composer install
+
+script:
+- src/shopgate/vendor/bin/phpunit
+
+jobs:
+  include:
+  - stage: Unit Test + Code Style Fixing
+    php: 5.3
+  - stage: Unit Test + Code Style Fixing
+    php: 5.4
+  - stage: Unit Test + Code Style Fixing
+    php: 5.5
+  - stage: Unit Test + Code Style Fixing
+    php: 7.0
+  - stage: Unit Test + Code Style Fixing
+    php: 7.1
+  - stage: Unit Test + Code Style Fixing
+    php: 5.6
+    script:
+    - curl -L http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer
+    - chmod a+x php-cs-fixer
+    - git checkout $TRAVIS_BRANCH
+    - ./php-cs-fixer fix --config=.php-cs.dist --cache-file=.php-cs.cache --diff --dry-run --verbose .
+    - rm php-cs-fixer
+    - src/shopgate/vendor/bin/phpunit
+  - stage: deploy
+    php: 5.6
+    before_script: skip
+    script:
+    - if [[ "$TRAVIS_TAG" ]]; then ./release/build_release_package.sh ; fi
+    deploy:
+      provider: releases
+      api_key:
+        secure: BREUYDkQHQQ4ejkln8DeqijhLG24eqU+ASJoFDW13Vxh4BjecxEv/ULYlSf2aMWQSlvEIb+ASW63lShzvSdQOT/ZVF2v6lCuxOODaHDGuK2AMvmnqZJOdkLoou0Ep3p/VpIOnx+vxkzP4WcuOTL0/grncRYAk0zeMQm5KQ5apmvOAXfyeHPcDBhrjHy37a5g2D6DWvet5UeEKbGQQ2LwDApXqQlLhDpHCgnMhBqIXWkaKE+13geEIkaogMRfgI+7VU1pXNvCO5mmi7vH6n7Vw7n8J0+H4MWSYE2P5RrNweYprWbXDgGVKUUa+g9pAfyK/rjYD8UZxlJXkvHVrEcFa8yU7B/djmsYwCSPdaKfUYvDOscARNqOtibfNF8ZFbU/3HB5g5y5mvK3vuvtEFfCfWx+a0RVL858Rhw+x+OY2sYh2Rq9QcVGUSmX+FzDU5cOcaAjxcffeOrocXiE7Hf79PkIPScehDGnYDzA6vedjh2k9dAtE+S+ueS1d6ISc7gCQS1LhuPXo4+IyJQh4uHMnrFYLKvXreEIFvu3X39WldFRvsPmz3IfxaytqV/amnlTzOg5DQFvhcYzE0ffOmyDDvvi82LzF/9W6AVBEE2KJ2kq0JI5R9VfZ2FBrP1orob4IMN2D9vHebFibrhDW5IUzRV17GY0f+2SF1HzF2Oc/Wg=
+      file: shopgate-opencart-module.zip
+      skip_cleanup: true
+      on:
+        tags: true
+
+notifications:
+  slack:
+    rooms:
+      secure: oQ6vV7EoY4cJ2GaGBfOkkPa/Wnp4q65obH7XZJoh16uAz4LFwUDK4STJTaZC5gGGDpEkmetN+IHj/aHRvHC8LweM2TdpDHRnzP25STmHr+wFKlM1yma64XBJMEGlSVwbdyj9CRMBzMRtZa+4MNGY/Rvp2h9ZdzaewMSEvfpEvvqKIKMqX+/TL1ZQ6+mAIrf+x/F/2N5jJYUZ+5EQCJVj9xaT1U1kCEmUeB47p1gZyT1blCU2DmqTltcoukpThxYI5w3l/rErZPJ6W4A+9jLiDlRQU/UWL2bKN3y1RnuHX9vfgOWeRDiGwp+7MeFWhpKrEuQQomx17d/HirZX7nkIQkNoN79Wap61PSVLKkXy+nbEL5DZGSZGJBedkZw1fc0Gdxzw15FtB7DQcLqB0Lb/qmwT9FAdU0TtNwJH5psX/bwr4o20IvhlUOVMpdC+BzCHoPO/WhRcjqI/jId0dZXh2HIjQknAgNnM+3DSnEEr7J2hw++xt3jlU64+LwTUK1q2TlLWMULVRfVuikecpg4QpQagLDVz4gHra+h8opoMUqHgHuVxEBW/0/cko2v1Y6k65/UTTJItxRf2JttB55eEfZ/eznmKDpSm/2S8dLetVHfUQ5wL3LZQ6FAASz5pru7s3ZmyZz7bujvg9SK95TWL1w4inc8kcaetQ/sC5yes4oM=
+    on_success: change
+    on_failure: always

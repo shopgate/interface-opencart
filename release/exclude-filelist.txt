@@ -1,0 +1,9 @@
+.git/
+.gitignore
+.gitmodules
+.idea/
+.travis.yml
+.php-cs.cache
+.php-cs.dist
+shopgate-opencart-module.ocmod.zip
+release/
