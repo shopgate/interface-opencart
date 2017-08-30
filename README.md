@@ -1,4 +1,4 @@
-# Shopgate OpenCart integration
+# Shopgate OpenCart Integration
 
 [![GitHub license](http://dmlc.github.io/img/apache2.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.org/shopgate/cart-integration-opencart.svg?branch=master)](https://travis-ci.org/shopgate/cart-integration-opencart)
