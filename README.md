@@ -3,7 +3,7 @@
 [![GitHub license](http://dmlc.github.io/img/apache2.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.org/shopgate/cart-integration-opencart.svg?branch=master)](https://travis-ci.org/shopgate/cart-integration-opencart)
 
-The Shopgate OpenCart integration allows you to connect your OpenCart store with the Shopgate backend.
+The Shopgate OpenCart integration enables you to connect your OpenCart store with the Shopgate backend.
 
 ## Getting Started
 Download and unzip the [latest releases](https://github.com/shopgate/cart-integration-opencart/releases/latest) into the root folder of your OpenCart.
