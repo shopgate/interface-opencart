@@ -35,7 +35,6 @@ class ShopgateOpencartDatabase extends ShopgateObject
     public function __construct()
     {
         $database = @($GLOBALS["___mysqli_ston"] = mysqli_connect(DB_HOSTNAME, DB_USERNAME, DB_PASSWORD, DB_DATABASE));
-        ((bool)mysqli_query($database, "USE " . constant('DB_DATABASE')));
         mysqli_set_charset($database, 'utf8');
 
         $this->_database = $database;
