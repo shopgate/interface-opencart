@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+- improved database connection setup
+- improved item export by using parent-child-relations, when possible
 
 ## 2.9.35 - 2017-08-30
 ### Changed

@@ -664,20 +664,7 @@ class ShopgateOpencartExportProductXml extends ShopgateOpencartExportProduct
                     if ($childItemCount > $this->_config->getMaxAttributes()) {
                         $this->_exportOptionType = self::EXPORT_OPTION_TYPE_INPUTS;
                     } else {
-                        // check if any option-value pair modifies the weight and set to export attributes in that case
-                        $parentQuantity = $this->getStock()->data['stock_quantity'];
-                        foreach ($options as $optKey => $option) {
-                            if ((!empty($option['weight'])
-                                    && floatval($option['weight']) > 0)
-                                || (!empty($option['quantity'])
-                                    && intval($option['quantity']) != intval($parentQuantity))
-                            ) {
-                                $this->_exportOptionType = self::EXPORT_OPTION_TYPE_ATTRIBUTES;
-
-                                // stop here since one single weight change forces attributes to be used
-                                break;
-                            }
-                        }
+                        $this->_exportOptionType = self::EXPORT_OPTION_TYPE_ATTRIBUTES;
                     }
                 }
             }
