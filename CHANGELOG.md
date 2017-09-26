@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
-## 2.9.36 - 2017-09-26
+## [2.9.36] - 2017-09-26
 ### Changed
 - improved database connection setup
 - improved item export by using parent-child-relations, when possible
@@ -236,4 +236,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - export categories, products and reviews to Shopgate
 
 [Unreleased]: https://github.com/shopgate/interface-opencart/compare/2.9.35...HEAD
-[2.9.36]: 
+[2.9.36]: https://github.com/shopgate/interface-opencart/compare/2.9.35...2.9.36
