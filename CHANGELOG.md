@@ -235,5 +235,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - updated Shopgate Library to 2.8.5
 - export categories, products and reviews to Shopgate
 
-[Unreleased]: https://github.com/shopgate/interface-opencart/compare/2.9.35...HEAD
+[Unreleased]: https://github.com/shopgate/interface-opencart/compare/2.9.36...HEAD
 [2.9.36]: https://github.com/shopgate/interface-opencart/compare/2.9.35...2.9.36
